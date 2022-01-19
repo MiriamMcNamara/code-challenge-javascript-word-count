@@ -11,7 +11,6 @@ export const countWords = (str) => {
   for (let i = 0; i < matchAll.length; i++) {
     //declare variable for each word, control case
     let word = matchAll[i].toLowerCase();
-    console.log("word:", word);
     //remove any unwanted single quotes included by the regex
     if (word.charAt(0) === "'") {
       word = word.replace(word.charAt(0), "");
